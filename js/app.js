@@ -28,15 +28,16 @@ function promoCode(Code, totalFloat) {
        document.getElementById("finalPrice").innerText = finalPrice;
    } else {
        document.getElementById("finalPrice").innerText = totalFloat;
-   }
+    }
+   
    }
    
    document.getElementById("codeButton").addEventListener("click", function () {
        const total = document.getElementById("totalCost").innerText;
        const totalFloat = parseFloat(total)
        const Code = document.getElementById("code").value;
+       document.getElementById("code").value = "";
       promoCode(Code,totalFloat)
-   
        
    })
 
