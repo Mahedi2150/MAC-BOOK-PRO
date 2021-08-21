@@ -1,4 +1,5 @@
 
+// total price update 
 function totalPrice() {
     const bestPrice = document.getElementById("bestPrice").innerText;
     const memoryCost = document.getElementById("memoryCost").innerText;
@@ -12,7 +13,7 @@ function totalPrice() {
     return totalCost;
 
 }
-
+// price update 
 function updatePrice(itemId, price) {
     const memoryCost = document.getElementById(itemId).innerText = price;
     totalPrice()
